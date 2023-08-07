@@ -4,8 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finanças</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-</body>
+  <header class="header">
+    <div class="header_top" style="max-width: 1112px;"> 
+      <div class="top">
+        <img class="top_image" src="assets/logo.png">
+        <label class="top_title">Controle financeiro</label>
+      </div>
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox"><img class="iconLines" src="assets/iconLines.png"></label>
+        <div class="menu">
+          <nav class="menu_buttons">
+            <label for="checkbox" class="close">X</label>
+              <ul>
+                <li><a id="register" href="javascript:void(0);">Cadastro de transações</a></li>
+                <li><a id="clear" href="javascript:void(0);">Limpar dados</a></li>
+                <li><a href="javascript:void(0);">Configuraçoes</a></li>
+              </ul>
+          </nav>
+        </div>
+    </div>
+ </header>
+<div class="transaction">
+  <div class="transaction_form">
+    <div class="form">
+      <h1>Nova transação</h1>
+      <form onsubmit="validacao(event);">
+        <div>
+          <div>
+            <label>Tipo de transação</label></br>
+            <select name="operacao" id="release">
+              <option value="compra">Compra</option>
+              <option  value="venda">Venda</option>
+            </select>
+          </div>
+          <div>
+            <label>Nome da mercadoria</label></br>
+            <input name="add_merchandise" type="text" id="add_merchandise" placeholder="Mercadoria" value="">
+          </div>
+          <div>
+              <label>Valor</label></br>
+              <input type="text" name="valor" id="valor" placeholder="R$0,00" value="R$" onkeypress="return(MascaraMoeda(this,'.',',',event))">
+          </div>
+        </div>
+        <div class="add_transaction">
+          <input type="submit" class="button" value="Adicionar transação">
+        </div>
+      </form>
+    </div>
+  </div>
+  </hr>
+  <form id="form_extract" class="tabela-extrato">
+    <section id="table" class="tabela-extrato">
+      <div class="extrato-de-transacoes">
+         <h3>Extrato de transações</h3>
+      </div>
+        <table>
+          <thead class="merchandise">
+            <tr class="merchandise_title">
+              <th class="title">Mercadoria</th>
+              <th class="title">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+  </div>
+    </section>
+  </form>
+  <footer class="footer"></footer>
+  <script src="app.js"></script>
+  </body>
 </html>
