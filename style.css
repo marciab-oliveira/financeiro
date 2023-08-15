@@ -1,0 +1,434 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  display: block;
+}
+ul{
+  list-style: none;
+  padding-inline-start: 0;
+}
+input[type=checkbox] {
+  display: none;
+}
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.extrato-de-transacoes {
+  justify-content: center;
+  display: flex;
+}
+.top_image{
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 40px
+}
+#form-extrato{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#table{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.merchandise_title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0px;
+  border-bottom: 1px solid #979797;
+}
+.price {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #979797;
+}
+.message_information {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.container-tabela tr {
+  border-bottom: 1px solid #979797;
+  border-collapse: collapse;
+}
+tbody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.title {
+  font-weight: bold;
+  margin: 0px 25px;
+}
+.title:nth-child(2){
+  margin-right: 42px;
+}
+.valor-total{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #979797;
+  margin-top: 2px;
+}
+.merchandise {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transaction_form {
+  border: 1px solid #97979797;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.campos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form select{
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.form input{
+  width: 100%;
+  padding: 0%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.button {
+  background: #333;
+  color: white;
+  width: 200px;
+}
+.add_transaction{
+  display: flex;
+  justify-content: center;
+}
+.transaction_form input,
+.transaction_form select {
+  border: 1px solid #97979797;
+  border-radius: 4px;
+  height: 32px;
+}
+.transaction_form label {
+  margin-bottom: 2px;
+}
+.transaction_form h1 {
+  text-align: center;
+  font-size: 18px;
+}
+.iconLines {
+  height: 35px;
+  padding-right: 20px;
+}
+.menu{ 
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 33%;
+  background-color: #333;
+}
+input[type="checkbox"]:checked ~ div {
+  display: block;
+}
+.menu_buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.menu_buttons a{
+  text-decoration: none;
+  color: #fff;
+  padding: 20px, 5px;
+  display: block;
+  width: 100%;
+}
+.menu_buttons a:hover{
+  color: #333333;
+  background: #C4C4C4;
+  font-weight: 600;
+}
+.menu_buttons li{
+  padding-bottom: 10px;
+  text-align: end;
+}
+.close{
+  padding: 22px;
+  top: 30px;
+  color: #E0E0E0;
+}
+.transaction {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+}
+.top_title {
+  position: sticky;
+  font-size: 24px;
+  padding-left: 98px;
+  left: calc(50% - 411px/2 - 0.5px);
+  display: flex;
+}
+.texto-retangulo {
+  height: 20px;
+  top: 20px;
+  left: 113px;
+  font-weight: 700;
+  font-size: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+tfoot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+.price_simbol{
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  padding: 6px 0px;
+}
+.price_simbol:nth-child(1) {
+  margin: 0px 10px;
+  width: 8.25px;
+}
+.price_simbol:nth-child(2){
+  justify-content: flex-start;
+  width: 80%;
+  word-break: break-all;
+}
+.price_simbol:nth-child(3){
+  width: 34%;
+  margin-right: 10px;
+  justify-content: flex-end;
+  text-align: right;
+  word-break: break-all;
+}
+.vt{
+  border-bottom: #979797 solid 1px;
+  padding: 1px;
+}
+.header_top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.message{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  height: 2%;
+  margin-top: 358px;
+  background: #333333;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .transaction_form h1 {
+    display: none;
+  }
+  .transaction {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .top_image {
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 40px;
+  }
+  .transaction_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .form{
+    margin: 0;
+  }
+  
+  .button{
+    width: 93%;
+    margin: 0;
+    margin-top: 22px;
+  }
+
+  .add_transaction{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .transaction_form {
+    border: 0;
+    border-bottom: 1px solid #97979797;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: calc(100% - 10px);
+  }
+  .campos{
+    display: flex;
+    flex-direction: column;
+  } 
+  .menu{
+    width: 90%;
+}
+  .header_top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .footer{
+    margin-top: 324px;
+  }
+}
+@media screen and (min-width:1112px) {
+  .top_image {
+    padding-left: 38px;
+    width: 40px;
+  }
+  .top_title{
+    position: initial;
+    padding-left: 0;
+    padding-right: 120px;
+    width: 411px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .top {
+    width: 100%;
+    display: flex;
+    padding-right: 130px;
+  }
+  .transaction {
+    display: flex;
+    justify-content: center;
+  }
+  .transaction_form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .campos{
+    display: flex;
+    flex-direction: column;
+  } 
+  .transaction_form .form {
+    margin: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  .transaction_form {
+    width: 400px;
+    padding: 20px;
+  }
+  .menu{
+    display: block;
+  }
+  .close{
+    display: none;
+  }
+  .menu_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin: 0;
+  }
+  .menu_buttons a {
+    display: initial;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    white-space: nowrap;
+    transition: 0.2s;
+  }
+  .menu_buttons ul{
+    display: flex;
+  }
+  .menu_buttons li{
+    padding-bottom: 0;
+  }
+  .iconLines {
+    display: none;
+  }
+  .tabela-extrato {
+    padding-left: 20px;
+    width: 100%;
+    max-width: 635px;
+  }
+  .header_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .menu {
+    position: static;
+    z-index: 1;
+    height: 40px;
+    width: 100%;
+  }
+  #form_extract{
+    align-content: flex-start;
+  }
+ .footer{
+  display: none;
+ }
+}
+
+
+

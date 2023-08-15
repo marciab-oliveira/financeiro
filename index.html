@@ -14,27 +14,29 @@
     <div class="header_top" style="max-width: 1112px;"> 
       <div class="top">
         <img class="top_image" src="assets/logo.png">
-        <label class="top_title">Controle financeiro</label>
+        <label class="top_title">Controle Financeiro</label>
       </div>
       <input type="checkbox" id="checkbox">
-      <label for="checkbox"><img class="iconLines" src="assets/iconLines.png"></label>
-        <div class="menu">
-          <nav class="menu_buttons">
-            <label for="checkbox" class="close">X</label>
-              <ul>
-                <li><a id="register" href="javascript:void(0);">Cadastro de transações</a></li>
-                <li><a id="clear" href="javascript:void(0);">Limpar dados</a></li>
-                <li><a href="javascript:void(0);">Configuraçoes</a></li>
-              </ul>
-          </nav>
-        </div>
+      <label for="checkbox">
+        <img class="iconLines" src="assets/iconLines.png">
+      </label>
+      <div class="menu">
+        <nav class="menu_buttons">
+          <label for="checkbox" class="close">X</label>
+            <ul>
+              <li><a id="register" href="javascript:void(0);">Cadastro de transações</a></li>
+              <li><a id="clear" href="javascript:void(0);">Limpar dados</a></li>
+              <li><a href="javascript:void(0);">Configuraçoes</a></li>
+            </ul>
+        </nav>
+      </div>
     </div>
  </header>
 <div class="transaction">
   <div class="transaction_form">
     <div class="form">
       <h1>Nova transação</h1>
-      <form onsubmit="validacao(event);">
+      <form onsubmit="addTransaction(event);">
         <div>
           <div>
             <label>Tipo de transação</label></br>
@@ -45,15 +47,31 @@
           </div>
           <div>
             <label>Nome da mercadoria</label></br>
-            <input name="add_merchandise" type="text" id="add_merchandise" placeholder="Mercadoria" value="">
+            <input 
+              name="add_merchandise" 
+              type="text" 
+              id="add_merchandise" 
+              placeholder="Mercadoria" 
+              value=""
+            >
           </div>
           <div>
               <label>Valor</label></br>
-              <input type="text" name="valor" id="valor" placeholder="R$0,00" value="R$" onkeypress="return(MascaraMoeda(this,'.',',',event))">
+              <input 
+                type="text" 
+                name="valor" 
+                id="valor" 
+                placeholder="R$0,00" 
+                value="R$" 
+                onkeypress="return(validateMask(this,'.',',',event))"
+              >
           </div>
         </div>
         <div class="add_transaction">
-          <input type="submit" class="button" value="Adicionar transação">
+          <input 
+            type="submit" 
+            class="button" 
+            value="Adicionar transação">
         </div>
       </form>
     </div>
@@ -80,6 +98,6 @@
     </section>
   </form>
   <footer class="footer"></footer>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
   </body>
 </html>
