@@ -13,4 +13,6 @@ lucro ou prejuizo ao atualizar os valores lançados.
 ## Ferramentas
 HTML, CSS e Javascript
 
-## 
+ <img src="https://github.com/marciab-oliveira/financeiro/assets/140990112/54729b9e-e190-47d5-bfc3-d2370178f0e7" />
+
+
