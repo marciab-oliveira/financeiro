@@ -1,6 +1,6 @@
 # Projeto Financeiro
 
-Projeto desenvolvido na imersão da Newtab Academy,onde utilizamos o figma com layout pré definido e igualmente
+Projeto desenvolvido na imersão da Newtab Academy, onde utilizamos o figma com layout pré definido e igualmente
 replicado em versões responsivas de telas variadas
 
 
